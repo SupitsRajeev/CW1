@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/form.css" />
+
+    <style>
+      .image-container {
+        background-image: url("./css/images/bonsai2.jpg");
+      }
+      #email, #password {
+        width: 350px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
+      }
+      #btn {
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+
+     
+      .forgot-password-signup {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        font-size: 16px;
+        text-align: right;
+        margin-top: 2rem;
+      }
+      a {
+        text-decoration: none;
+        /* color: #000; */
+      }
+      .remember-me {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 3vh;
+      }
+      
+      .forgot-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    
+
+    <div class="wrapper">
+      <div class="image-container"></div>
+      <div class="form">
+        <h1>Login</h1>
+        <form action="./index.html" method="post" id="functional-form">
+          <div class="input-end">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required />
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Password" required />
+            <div class="forgot-container">
+              <div class="remember-me">
+                <input type="checkbox"></input>&nbsp; Remember Me
+                <div></div>
+              </div>
+              <div class="forgot-password-signup">
+                <a href="#" target="_blank">Forgot password?</a>
+                <a href="./register.html" target="_blank">Not signed up yet?</a>
+              </div>
+            </div>
+            <input type="submit" value="Login" id="btn" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

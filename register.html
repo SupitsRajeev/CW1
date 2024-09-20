@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./css/form.css" />
+    
+    <style>
+      .image-container {
+        background-image: url("./css/images/bonsai.jpg");
+      }
+      .names {
+        display: flex;
+      }
+      .firstname {
+        margin-right: 5px;
+      }
+
+      .firstname,
+      .lastname {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class="wrapper">
+      <div class="image-container"></div>
+      <div class="form">
+        <h1 style="letter-spacing: 1px;">Create your Account</h1>
+        <form method="post" action="./login.html" id="functional-form">
+          <div class="input-end">
+            <div class="names">
+              <div class="firstname">
+                <label for="Fname">First Name: </label> <br />
+                <input type="text" placeholder="First name" id="first_name" />
+              </div>
+              <div class="lastname">
+                <label for="Lname">Last name: </label><br />
+                <input type="text" placeholder="Last name" id="last_name" />
+              </div>
+            </div>
+            <label for="email">Email:</label>
+            <input
+              type="text"
+              placeholder="Enter your email address"
+              id="email"
+            />
+            <label for="password">Password: </label>
+            <input
+              type="password"
+              placeholder="Password"
+              id="password"
+              name="password"
+            />
+            <label for="confirm_password">Confirm Password: </label>
+            <input
+              type="password"
+              placeholder="Confirm Your Password"
+              id="confirm_password"
+              name="confirm_password"
+            />
+            <label for="age">Age: </label>
+            <input type="number" id="age" min="13" max="120" name="age" />
+            <label for="refer">How did you hear about us? </label>
+            <select id="refer" name="refer">
+              <option>(none)</option>
+              <option>Facebook</option>
+              <option>Reddit</option>
+              <option>Instagram</option>
+              <option>Other</option>
+            </select>
+            <fieldset style="display: inline">
+              <input type="checkbox" id="accept" required />
+              <label for="accept"> I accept to the terms and conditions.</label>
+            </fieldset>
+            <input type="submit" value="Register" id="btn" />
+          </div>
+        </form>
+        <script src="./scripts/script.js"></script>
+      </div>
+    </div>
+  </body>
+</html>

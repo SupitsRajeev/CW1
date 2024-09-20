@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="./css/images/logo.png" />
+      </div>
+      <div class="navbar">
+        <ul>
+          <li class="active"><a href="./index.html">Home</a></li>
+          <li><a href="./product.html">Products</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./aboutus.html">About Us</a></li>
+          <li><a href="./login.html">Login</a></li>
+          <li><a href="./research.html">Research</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="wrapper">
+        <div class="outer-container">
+          <div class="inner-container">
+            <div class="caption-container">
+              <h1>Grab a Bonsai <br />and Get Started</h1>
+              <p>
+                If you are a beginner then keeping a bonsai tree may sound
+                difficult to you but it isn't. Bonsai trees are planted in small
+                pots with minimal space for water and nutrient reserves. That
+                means you need to make sure to give plenty of light, water, and
+                fertilizers when needed and your tree is sure to thrive!!
+              </p>
+            </div>
+            <div class="banner">
+              <div id="img">
+                <img src="./css/images/slider1.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; font-size: 1.6rem">
+          <h2>Best Selling Products</h2>
+        </div>
+        <div class="products-container">
+          <div class="products-grid">
+            <div class="product-card">
+              <div class="product-center">
+                <img
+                  src="./css/images/juniper.png"
+                  alt="Juniper bonsai plant"
+                />
+                <div class="bonsai-desc">
+                  <h2>Juniper</h2>
+                  <p>Versatile and easy to care</p>
+                </div>
+                <div class="buy-options-container">
+                  <div class="price">$499.99</div>
+
+                  <button class="add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="product-center">
+                <img src="./css/images/Azalea.png" alt="azalea bonsai plant" />
+                <div class="bonsai-desc">
+                  <h2>Azalea</h2>
+                  <p>
+                    Delicate beauty which can be trained to flower in a small
+                    size
+                  </p>
+                </div>
+                <div class="buy-options-container">
+                  <div class="price">$199.99</div>
+
+                  <button class="add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="product-center">
+                <img
+                  src="./css/images/dwarfjade.png"
+                  alt="dwarf jade bonsia plant"
+                />
+                <div class="bonsai-desc">
+                  <h2>Dwarf Jade</h2>
+                  <p>
+                    Easy to care and ability to survive in a variety of
+                    conditions
+                  </p>
+                </div>
+
+                <div class="buy-options-container">
+                  <div class="price">$48.6</div>
+                  <button class="add-to-cart">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <p>Item added to cart.</p>
+          <br />
+          <span class="close">&times;</span>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Copyright ©2023</p>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">DMCA</a></li>
+      </ul>
+    </footer>
+    <script>
+      var images = [
+        "./css/images/slider1.png",
+        "./css/images/slider2.png",
+        "./css/images/slider1.png",
+        "./css/images/slider2.png",
+      ];
+
+      var x = 0;
+      var img = document.getElementById("img");
+      setInterval(slider, 2000);
+
+      function slider() {
+        if (x < images.length) {
+          x = x + 1;
+        } else {
+          x = 1;
+        }
+
+        img.innerHTML = "<img src=" + images[x - 1] + ">";
+      }
+    </script>
+    <script src="./scripts/modal.js"></script>
+  </body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/product.css" />
+    <link rel="stylesheet" href="./css/shared.css" />
+    <link rel="stylesheet" href="./css/navbar.css">
+    <title>Products</title>
+  </head>
+  <body>
+    <!-- navbar  -->
+    <nav>
+      <div class="logo">
+        <img src="./css/images/logo.png" />
+      </div>
+      <div class="navbar">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li class="active"><a href="./product.html">Products</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./aboutus.html">About Us</a></li>
+          <li><a href="./login.html">Login</a></li>
+          <li><a href="./research.html">Research</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header>
+      <h1 class="heading">Showing all Products</h1>
+      <button class="btn" id="cart">
+        Cart (<span id="cart-value">0</span>)
+      </button>
+    </header>
+    <div class="sort">
+      <p>Sort by:</p>
+      <select id="sort">
+        <option>None</option>
+        <option>Price: Low to High</option>
+        <option>Price: High to Low</option>
+        <option>Name: A to Z</option>
+        <option>Name: Z to A</option>
+      </select>
+    </div>
+    <div class="products-container">
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-center">
+            <img src="./css/images/juniper.png" alt="Juniper bonsai plant" />
+            <div class="bonsai-desc">
+              <h2>Juniper</h2>
+              <p>Versatile and easy to care</p>
+            </div>
+            <div class="buy-options-container">
+              <div class="price">$499.99</div>
+
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-center">
+            <img src="./css/images/ficus1.png" alt="Ficus bonsai plant" />
+            <div class="bonsai-desc">
+              <h2>Ficus</h2>
+              <p>
+                Exceptionally hardy plants that can withstand a wide variety of
+                environments
+              </p>
+            </div>
+            <div class="buy-options-container">
+              <div class="price">$105.7</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-center">
+            <img src="./css/images/moneytreeplant.png" alt="money tree plant" />
+            <div class="bonsai-desc">
+              <h2>Money Tree Plant</h2>
+              <p>Often considered a bearer of good fortune and wealth</p>
+            </div>
+            <div class="buy-options-container">
+              <div class="price">$69.99</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-center">
+            <img
+              src="./css/images/silverdustbonsai.png"
+              alt="silver dust bonsai plant"
+            />
+            <div class="bonsai-desc">
+              <h2>Silver Dust Bonsai</h2>
+              <p>
+                Small, delicate leaves that are covered in a powdery silver
+                coating.
+              </p>
+            </div>
+            <div class="buy-options-container">
+              <div class="price">$92.67</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-center">
+            <img
+              src="./css/images/dwarfjade.png"
+              alt="dwarf jade bonsia plant"
+            />
+            <div class="bonsai-desc">
+              <h2>Dwarf Jade</h2>
+              <p>
+                Easy to care and ability to survive in a variety of conditions
+              </p>
+            </div>
+
+            <div class="buy-options-container">
+              <div class="price">$48.6</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-center">
+            <img src="./css/images/Azalea.png" alt="azalea bonsai plant" />
+            <div class="bonsai-desc">
+              <h2>Azalea</h2>
+              <p>
+                Delicate beauty which can be trained to flower in a small size
+              </p>
+            </div>
+            <div class="buy-options-container">
+              <div class="price">$199.99</div>
+
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popular-items">
+        <h2>Recommended</h2>
+        <div class="side-panel">
+          <img src="./css/images/tools.png" alt="" />
+          <a href="">
+            <div class="panel-text">
+              <h3>Starting Kits for Beginners</h3>
+              <p>Get started with maintaining your bonsai plant.</p>
+            </div>
+          </a>
+        </div>
+        <div class="side-panel">
+          <img src="./css/images/techniques.png" alt="" />
+          <a href="">
+            <div class="panel-text">
+              <h3>Techniques</h3>
+              <p>Introduction to the art of Bonsai</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>Copyright ©2023</p>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">DMCA</a></li>
+      </ul>
+    </footer>
+    <script src="./scripts/product.js"></script>
+  </body>
+</html>

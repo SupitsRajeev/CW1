@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.heading {
+  flex: 1;
+  text-align: center;
+  font-size: 4rem;
+  word-spacing: 1rem;
+  letter-spacing: 2px;
+}
+
+
+
+
+.person-grid {
+  
+  margin: 2rem;
+  margin-bottom: 3rem;
+  display: grid;
+  grid-area: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  width: 65%;
+}
+
+
+
+
+.person-card {
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding: 1.5rem;
+  height: 59vh;
+}
+
+
+button:hover {
+  cursor: pointer;
+}
+.person-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.person-center img {
+  width: 100%;
+  border-radius: 50%;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+
+
+.personal-details {
+  display: flex;
+  flex-direction: column;
+  height: 12vh;
+}
+
+
+footer {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 2rem;
+}
+footer p {
+  margin: 0;
+  background-color: #333333;
+
+  text-align: center;
+}
+footer ul {
+  list-style: none;
+  margin: 0;
+  background-color: #333333;
+
+  padding: 0;
+  text-align: center;
+}
+footer ul li {
+  display: inline-block;
+  background-color: #333333;
+
+  margin: 0 10px;
+}
+footer ul li a {
+  color: #ffffff;
+  background-color: #333333;
+
+  text-decoration: none;
+}

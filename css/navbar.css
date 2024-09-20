@@ -1,0 +1,46 @@
+/* anusuya code starts here */
+
+nav ul {
+    float: right;
+    list-style-type: none;
+    margin-top: -60px;
+    /* margin-right: -20px; */
+    padding-right: 1rem;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #006800;
+    padding: 1.3rem;
+    border: 2px solid transparent;
+    font-size: 1.4rem;
+    transition: 0.5s ease;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+  
+  nav ul li a:hover {
+    background-color: #2e8b57;
+    
+    color: white;
+  }
+  
+  nav ul li.active a {
+    background-color: #2e8b57;
+    color: white;
+    padding-top: 4rem;
+    padding-bottom: 2.4rem;
+  }
+  
+  .logo {
+    width: 10rem;
+    height: 6rem;
+    margin-top: 1rem;
+    margin-left: 1.12rem;
+  }
+  
+  /* anusuya code ends here */
